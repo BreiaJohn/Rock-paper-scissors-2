@@ -12,5 +12,5 @@ A fun, interactive **Rock Paper Scissors** game built with **HTML, CSS, and Java
 1. Open `index.html` in your browser
 2. Click Rock, Paper, or Scissors
 3. See if you beat the computer!
-# Rock-paper-scissors-2
+
 
