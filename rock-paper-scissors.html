@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+   <!--1 - 6 Rock Paper Scissors created by Breia John 09/24/2025 -->
+</head>
+<body>
+<p>
+  Rock Paper Scissors
+</p>
+
+
+<button onclick=" playGame('Rock')">
+ <img src="images/rock-emoji.png" alt="Rock" style="width: 40px; height: 40px; margin-right: 8px;">Rock</button>
+
+
+<button onclick=" playGame('Paper')">
+  <img src="images/paper-emoji.png" alt="Paper" style="width: 40px; height: 40px; margin-right: 8px;">
+  Paper
+</button>
+
+
+
+
+<button onclick=" playGame('Scissors')">
+  <img src="images/scissors-emoji.png" alt="Scissors" style="width: 40px; height: 40px; margin-right: 8px;">
+  Scissors
+</button>
+
+<p class="js-result"></p>
+<p class="js-moves"></p>
+<p class="js-score"></p>
+
+
+<button onclick="
+score.wins = 0;
+score.losses = 0;
+score.ties = 0;
+localStorage.removeItem('score');
+updateScoreElement();
+">Reset Score</button>
+
+<script src="script.js"></script>
+</body>
+</html>
