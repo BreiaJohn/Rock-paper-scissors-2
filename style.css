@@ -38,3 +38,7 @@ body {
       padding:8px 15px;
       cursor: pointer;
     }
+    button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
