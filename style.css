@@ -23,15 +23,15 @@ body {
   background-color: transparent;
   border: 3px solid white;
   /* Set fixed dimensions so they are identical */
-  width: 150px; 
+  width: 150px;
   height: 60px;
-  
+
   /* Use flexbox to center the icon and text perfectly */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px; /* Adds space between the emoji and the word */
-  
+
   border-radius: 8px; /* Slightly rounded corners look more modern than sharp ones */
   margin-bottom: 10px;
   cursor: pointer;
@@ -57,6 +57,10 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
 }
+.result, .score {
+  /*fadeIn' animation */
+  animation: fadeIn 0.5s ease-out;
+}
 
 .reset-score-button {
   background-color: transparent;
@@ -79,6 +83,16 @@ button:hover {
   transform: scale(1.05);
   opacity: 1;
   /* add glow effect */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); 
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
   border-color: rgba(255, 255, 255, 1);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Starts slightly higher */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Settles into place */
+  }
 }
