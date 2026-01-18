@@ -1,28 +1,47 @@
 body {
-      background-color: rgb(25, 25, 25);
-      color:white;
-      font-family: Arial;
-      
-    }
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+  /* Add these 3 lines */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
     .title{
       font-size: 30px;
       font-weight: bold;
     }
 
-    .move-icon{
-      height:50px;
+    .move-icon {
+  height: 40px;
+  width: auto;
+}
+  .move-button {
+  background-color: transparent;
+  border: 3px solid white;
+  /* Set fixed dimensions so they are identical */
+  width: 150px; 
+  height: 60px;
+  
+  /* Use flexbox to center the icon and text perfectly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adds space between the emoji and the word */
+  
+  border-radius: 8px; /* Slightly rounded corners look more modern than sharp ones */
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease;
+}
+.move-button, .reset-score-button {
+  transition: all 0.2s ease; /* This makes the scale/opacity change smooth */
+}
 
-    }
-    .move-button{
-      background-color: transparent;
-      border: 3px solid white;
-      width:120px;
-      height:120px;
-      border-radius: 60px;
-      margin-right:10px;
-      cursor: pointer;
-     
-    }
     .result{
       font-size:25px;
       font-weight: bold;
