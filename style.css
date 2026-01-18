@@ -41,23 +41,44 @@ body {
 .move-button, .reset-score-button {
   transition: all 0.2s ease; /* This makes the scale/opacity change smooth */
 }
+.move-button:active {
+  transform: scale(0.95); /* Slightly shrinks when clicked */
+  background-color: rgba(255, 255, 255, 0.1); /* Adds a subtle highlight */
+}
+    .result {
+  font-size: 30px; /* Slightly larger */
+  font-weight: bold;
+  margin-top: 40px;
+  text-transform: uppercase; /* Makes "Tie" or "You Win" look more dramatic */
+}
 
-    .result{
-      font-size:25px;
-      font-weight: bold;
-      margin-top:50px;
-    }
-    .score{
-      margin-top: 60px;
-    }
-    .reset-score-button{
-      background-color: white;
-      border:none;
-      font-size:15px;
-      padding:8px 15px;
-      cursor: pointer;
-    }
-    button:hover {
+.score {
+  margin-top: 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.reset-score-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  margin-top: 20px;
+}
+
+.reset-score-button:hover {
+  background-color: white;
+  color: rgb(25, 25, 25); /* Inverts colors on hover */
+}
+
+button:hover {
   transform: scale(1.05);
-  opacity: 0.9;
+  opacity: 1;
+  /* add glow effect */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); 
+  border-color: rgba(255, 255, 255, 1);
 }
