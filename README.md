@@ -1,16 +1,26 @@
 # Rock Paper Scissors 🎮✋✌️
 
-A fun, interactive **Rock Paper Scissors** game built with **HTML, CSS, and JavaScript**. Click your move, beat the computer, and track your score. Perfect for beginners practicing DOM manipulation and event handling!
+A fun, interactive **Rock Paper Scissors** game built with **HTML, CSS, and JavaScript**.  
+Challenge the computer, track your score, and enjoy a clean, beginner-friendly UI.
 
-## Features
+## ▶️ Play Now
+👉 **Live Demo:** https://breiajohn.github.io/Rock-paper-scissors-2/
+
+## 📸 Preview
+![Rock Paper Scissors Game](images/preview.png)
+
+## ✨ Features
 - Clickable buttons with images for Rock, Paper, and Scissors
-- Interactive game logic handled with JavaScript
-- Dynamic score tracking
-- Styled buttons for a clean, responsive interface
+- JavaScript-based game logic
+- Score tracking
+- Responsive, beginner-friendly layout
 
-## How to Play
-1. Open `index.html` in your browser
-2. Click Rock, Paper, or Scissors
-3. See if you beat the computer!
+## 🛠️ Built With
+- HTML
+- CSS
+- JavaScript
 
-
+## 📖 How to Play
+1. Click Rock, Paper, or Scissors
+2. The computer randomly selects a move
+3. The winner is displayed instantly
